@@ -15,10 +15,15 @@
     <!-- Start button -->
     <button id="startButton">Start</button>
     <button id="sendOfferButton">Send Offer</button>
+    <button id="answerButton">answer</button>
+    <button id="sendCandidateButton">Send Candidate</button>
+
 
     <div id="status">Status: Waiting for connection...</div>
 
     <script>
+        let candidates = [];
+        let Offer = null;
         const socket = io();  // Connect to the signaling server
 
         const peerConnectionConfig = {
@@ -38,7 +43,8 @@
             // ICE candidate handler
             peerConnection.onicecandidate = function (event) {
                 if (event.candidate) {
-                    sendCandidate(event.candidate);
+                    candidates.push(event.candidate);
+                    // sendCandidate(event.candidate);
                 }
             };
 
@@ -91,15 +97,7 @@
         // Receive Offer
         socket.on('offer', offer => {
             console.log('Received offer');
-            peerConnection.setRemoteDescription(new RTCSessionDescription(offer))
-                .then(() => peerConnection.createAnswer())
-                .then(answer => {
-                    return peerConnection.setLocalDescription(answer);
-                })
-                .then(() => {
-                    sendAnswer(peerConnection.localDescription);
-                })
-                .catch(error => console.log('Error handling offer: ', error));
+            Offer = offer;
         });
 
         // Receive Answer
@@ -131,6 +129,31 @@
             startConnection();
             // Check if either sender or receiver is selected
         });
+        document.getElementById('sendCandidateButton').addEventListener('click', () => {
+            if (candidates.length > 0) {
+                let i = 0;
+                console.log('Sending ICE candidates');
+                candidates.forEach(candidate => {
+                    sendCandidate(candidate);
+                    i++;
+                });
+                candidates = [];
+                console.log('Sent ' + i + ' ICE candidates');
+            }
+        });
+        document.getElementById('answerButton').addEventListener('click', () => {
+            // Create an answer if receiver is selected
+            peerConnection.setRemoteDescription(new RTCSessionDescription(Offer))
+                .then(() => peerConnection.createAnswer())
+                .then(answer => {
+                    return peerConnection.setLocalDescription(answer);
+                })
+                .then(() => {
+                    sendAnswer(peerConnection.localDescription);
+                })
+                .catch(error => console.log('Error handling offer: ', error));
+        });
+
     </script>
     <video id="local-video" autoplay></video> <!-- For showing remote video -->
     <video id="remote-video" autoplay></video> <!-- For showing remote video -->
