@@ -11,27 +11,18 @@ def index():
 # Handle Offer
 @socketio.on('offer')
 def handle_offer(offer):
-    emit('offer', offer, broadcast=True)
+    emit('offer', offer, broadcast=True, include_self=False)
 
 # Handle Answer
 @socketio.on('answer')
 def handle_answer(answer):
-    emit('answer', answer, broadcast=True)
+    emit('answer', answer, broadcast=True, include_self=False)
 
 # Handle ICE Candidate
 @socketio.on('candidate')
 def handle_candidate(candidate):
-    emit('candidate', candidate, broadcast=True)
+    emit('candidate', candidate, broadcast=True, include_self=False)
 
-# Handle Session Start
-@socketio.on('session_started')
-def handle_session_started():
-    emit('session_started', broadcast=True)
-
-# Handle Session End
-@socketio.on('session_ended')
-def handle_session_ended():
-    emit('session_ended', broadcast=True)
 
 if __name__ == '__main__':
     # Use your .crt and .key files here

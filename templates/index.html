@@ -12,13 +12,9 @@
 <body>
     <h1>WebRTC Test</h1>
 
-    <label for="sender">Sender</label>
-    <input type="checkbox" id="sender" />
-    <label for="receiver">Receiver</label>
-    <input type="checkbox" id="receiver" />
-
     <!-- Start button -->
     <button id="startButton">Start</button>
+    <button id="sendOfferButton">Send Offer</button>
 
     <div id="status">Status: Waiting for connection...</div>
 
@@ -67,30 +63,17 @@
             navigator.mediaDevices.getUserMedia({ video: true, audio: true })
                 .then(stream => {
                     localStream = stream;
-                    const localVideo = document.createElement('video');
+                    const localVideo = document.getElementById('local-video');
                     localVideo.srcObject = stream;
-                    document.body.appendChild(localVideo);  // Show local video
-
+                    localVideo.muted = true; // Mute the audio output
                     createPeerConnection();
-
-                    // Check if the user selected sender checkbox
-                    if (document.getElementById('sender').checked) {
-                        // Create an offer if sender is selected
-                        peerConnection.createOffer()
-                            .then(offer => {
-                                return peerConnection.setLocalDescription(offer);
-                            })
-                            .then(() => {
-                                sendOffer(peerConnection.localDescription);
-                            })
-                            .catch(error => console.log('Error creating offer: ', error));
-                    }
                 })
                 .catch(error => console.log('Error getting media: ', error));
         }
 
         // Send Offer to Server
         function sendOffer(offer) {
+            console.log('Sending offer');
             socket.emit('offer', offer);
         }
 
@@ -101,49 +84,55 @@
 
         // Send ICE Candidate to Server
         function sendCandidate(candidate) {
+            console.log('Sending ICE candidate');
             socket.emit('candidate', candidate);
         }
 
         // Receive Offer
         socket.on('offer', offer => {
-            if (document.getElementById('receiver').checked) {
-                peerConnection.setRemoteDescription(new RTCSessionDescription(offer))
-                    .then(() => peerConnection.createAnswer())
-                    .then(answer => {
-                        return peerConnection.setLocalDescription(answer);
-                    })
-                    .then(() => {
-                        sendAnswer(peerConnection.localDescription);
-                    })
-                    .catch(error => console.log('Error handling offer: ', error));
-            }
+            console.log('Received offer');
+            peerConnection.setRemoteDescription(new RTCSessionDescription(offer))
+                .then(() => peerConnection.createAnswer())
+                .then(answer => {
+                    return peerConnection.setLocalDescription(answer);
+                })
+                .then(() => {
+                    sendAnswer(peerConnection.localDescription);
+                })
+                .catch(error => console.log('Error handling offer: ', error));
         });
 
         // Receive Answer
         socket.on('answer', answer => {
-            if (document.getElementById('sender').checked) {
-                peerConnection.setRemoteDescription(new RTCSessionDescription(answer))
-                    .catch(error => console.log('Error handling answer: ', error));
-            }
+            peerConnection.setRemoteDescription(new RTCSessionDescription(answer))
+                .catch(error => console.log('Error handling answer: ', error));
         });
 
         // Receive ICE Candidate
         socket.on('candidate', candidate => {
+            console.log('Received ICE candidate');
             peerConnection.addIceCandidate(new RTCIceCandidate(candidate))
                 .catch(error => console.log('Error adding ICE candidate: ', error));
         });
 
+        document.getElementById('sendOfferButton').addEventListener('click', () => {
+            // Create an offer if sender is selected
+            peerConnection.createOffer()
+                .then(offer => {
+                    return peerConnection.setLocalDescription(offer);
+                })
+                .then(() => {
+                    sendOffer(peerConnection.localDescription);
+                })
+                .catch(error => console.log('Error creating offer: ', error));
+        });
         // Event listener for the Start button
         document.getElementById('startButton').addEventListener('click', () => {
+            startConnection();
             // Check if either sender or receiver is selected
-            if (document.getElementById('sender').checked || document.getElementById('receiver').checked) {
-                startConnection();
-            } else {
-                alert('Please select either Sender or Receiver.');
-            }
         });
     </script>
-
+    <video id="local-video" autoplay></video> <!-- For showing remote video -->
     <video id="remote-video" autoplay></video> <!-- For showing remote video -->
 </body>
 

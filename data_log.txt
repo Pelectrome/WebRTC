@@ -1,0 +1,126 @@
+CANDIDATE:
+{'candidate': 'candidate:2433801658 1 udp 2122134271 fd80::1904:7930:1303:67e6 57561 typ host generation 0 ufrag xqVp network-id 5 network-cost 10', 'sdpMid': '0', 'sdpMLineIndex': 0, 'usernameFragment': 'xqVp'}
+
+CANDIDATE:
+{'candidate': 'candidate:1789583542 1 udp 2122068735 fd80::b558:cfe0:3a7a:ee6c 57562 typ host generation 0 ufrag xqVp network-id 6 network-cost 10', 'sdpMid': '0', 'sdpMLineIndex': 0, 'usernameFragment': 'xqVp'}
+
+CANDIDATE:
+{'candidate': 'candidate:1946711577 1 udp 2122260223 192.168.80.1 57563 typ host generation 0 ufrag xqVp network-id 1', 'sdpMid': '1', 'sdpMLineIndex': 1, 'usernameFragment': 'xqVp'}
+
+CANDIDATE:
+{'candidate': 'candidate:2272462666 1 udp 2122194687 192.168.56.1 57564 typ host generation 0 ufrag xqVp network-id 2', 'sdpMid': '1', 'sdpMLineIndex': 1, 'usernameFragment': 'xqVp'}
+
+CANDIDATE:
+{'candidate': 'candidate:2684570726 1 udp 2121998079 192.168.137.1 57565 typ host generation 0 ufrag xqVp network-id 3 network-cost 10', 'sdpMid': '1', 'sdpMLineIndex': 1, 'usernameFragment': 'xqVp'}
+
+CANDIDATE:
+{'candidate': 'candidate:2913381057 1 udp 2121932543 192.168.1.41 57566 typ host generation 0 ufrag xqVp network-id 4 network-cost 10', 'sdpMid': '1', 'sdpMLineIndex': 1, 'usernameFragment': 'xqVp'}
+
+CANDIDATE:
+{'candidate': 'candidate:2433801658 1 udp 2122134271 fd80::1904:7930:1303:67e6 63384 typ host generation 0 ufrag xqVp network-id 5 network-cost 10', 'sdpMid': '1', 'sdpMLineIndex': 1, 'usernameFragment': 'xqVp'}
+
+CANDIDATE:
+{'candidate': 'candidate:1789583542 1 udp 2122068735 fd80::b558:cfe0:3a7a:ee6c 56582 typ host generation 0 ufrag xqVp network-id 6 network-cost 10', 'sdpMid': '1', 'sdpMLineIndex': 1, 'usernameFragment': 'xqVp'}
+
+OFFER:
+{'type': 'offer', 'sdp': 'v=0\r\no=- 1633021971951115877 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE 0 1\r\na=extmap-allow-mixed\r\na=msid-semantic: WMS 37f92d16-6899-447a-8139-d5881b3b4659\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 63 9 0 8 13 110 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:xqVp\r\na=ice-pwd:HcW9l+CdFzI4OkBABcnPDdC8\r\na=ice-options:trickle\r\na=fingerprint:sha-256 6F:24:3B:E4:82:6C:98:F7:B0:F6:08:85:C9:A0:A1:01:54:F5:F8:C9:B4:98:43:54:B5:46:A2:92:C1:B7:F8:24\r\na=setup:actpass\r\na=mid:0\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=sendrecv\r\na=msid:37f92d16-6899-447a-8139-d5881b3b4659 bacfaed1-a1b6-4c52-8e29-a754e4d334de\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:63 red/48000/2\r\na=fmtp:63 111/111\r\na=rtpmap:9 G722/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:126 telephone-event/8000\r\na=ssrc:1028939135 cname:cbcDfoB9A+yaLnW4\r\na=ssrc:1028939135 msid:37f92d16-6899-447a-8139-d5881b3b4659 bacfaed1-a1b6-4c52-8e29-a754e4d334de\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 97 102 103 104 105 106 107 108 109 127 125 39 40 45 46 98 99 100 101 112 113 116 117 118\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:xqVp\r\na=ice-pwd:HcW9l+CdFzI4OkBABcnPDdC8\r\na=ice-options:trickle\r\na=fingerprint:sha-256 6F:24:3B:E4:82:6C:98:F7:B0:F6:08:85:C9:A0:A1:01:54:F5:F8:C9:B4:98:43:54:B5:46:A2:92:C1:B7:F8:24\r\na=setup:actpass\r\na=mid:1\r\na=extmap:14 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:13 urn:3gpp:video-orientation\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:5 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:8 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=sendrecv\r\na=msid:37f92d16-6899-447a-8139-d5881b3b4659 94089d76-049b-4629-8877-17816eaf99aa\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 VP8/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:102 H264/90000\r\na=rtcp-fb:102 goog-remb\r\na=rtcp-fb:102 transport-cc\r\na=rtcp-fb:102 ccm fir\r\na=rtcp-fb:102 nack\r\na=rtcp-fb:102 nack pli\r\na=fmtp:102 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42001f\r\na=rtpmap:103 rtx/90000\r\na=fmtp:103 apt=102\r\na=rtpmap:104 H264/90000\r\na=rtcp-fb:104 goog-remb\r\na=rtcp-fb:104 transport-cc\r\na=rtcp-fb:104 ccm fir\r\na=rtcp-fb:104 nack\r\na=rtcp-fb:104 nack pli\r\na=fmtp:104 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42001f\r\na=rtpmap:105 rtx/90000\r\na=fmtp:105 apt=104\r\na=rtpmap:106 H264/90000\r\na=rtcp-fb:106 goog-remb\r\na=rtcp-fb:106 transport-cc\r\na=rtcp-fb:106 ccm fir\r\na=rtcp-fb:106 nack\r\na=rtcp-fb:106 nack pli\r\na=fmtp:106 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\r\na=rtpmap:107 rtx/90000\r\na=fmtp:107 apt=106\r\na=rtpmap:108 H264/90000\r\na=rtcp-fb:108 goog-remb\r\na=rtcp-fb:108 transport-cc\r\na=rtcp-fb:108 ccm fir\r\na=rtcp-fb:108 nack\r\na=rtcp-fb:108 nack pli\r\na=fmtp:108 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42e01f\r\na=rtpmap:109 rtx/90000\r\na=fmtp:109 apt=108\r\na=rtpmap:127 H264/90000\r\na=rtcp-fb:127 goog-remb\r\na=rtcp-fb:127 transport-cc\r\na=rtcp-fb:127 ccm fir\r\na=rtcp-fb:127 nack\r\na=rtcp-fb:127 nack pli\r\na=fmtp:127 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=4d001f\r\na=rtpmap:125 rtx/90000\r\na=fmtp:125 apt=127\r\na=rtpmap:39 H264/90000\r\na=rtcp-fb:39 goog-remb\r\na=rtcp-fb:39 transport-cc\r\na=rtcp-fb:39 ccm fir\r\na=rtcp-fb:39 nack\r\na=rtcp-fb:39 nack pli\r\na=fmtp:39 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=4d001f\r\na=rtpmap:40 rtx/90000\r\na=fmtp:40 apt=39\r\na=rtpmap:45 AV1/90000\r\na=rtcp-fb:45 goog-remb\r\na=rtcp-fb:45 transport-cc\r\na=rtcp-fb:45 ccm fir\r\na=rtcp-fb:45 nack\r\na=rtcp-fb:45 nack pli\r\na=fmtp:45 level-idx=5;profile=0;tier=0\r\na=rtpmap:46 rtx/90000\r\na=fmtp:46 apt=45\r\na=rtpmap:98 VP9/90000\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=fmtp:98 profile-id=0\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:100 VP9/90000\r\na=rtcp-fb:100 goog-remb\r\na=rtcp-fb:100 transport-cc\r\na=rtcp-fb:100 ccm fir\r\na=rtcp-fb:100 nack\r\na=rtcp-fb:100 nack pli\r\na=fmtp:100 profile-id=2\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=100\r\na=rtpmap:112 H264/90000\r\na=rtcp-fb:112 goog-remb\r\na=rtcp-fb:112 transport-cc\r\na=rtcp-fb:112 ccm fir\r\na=rtcp-fb:112 nack\r\na=rtcp-fb:112 nack pli\r\na=fmtp:112 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=64001f\r\na=rtpmap:113 rtx/90000\r\na=fmtp:113 apt=112\r\na=rtpmap:116 red/90000\r\na=rtpmap:117 rtx/90000\r\na=fmtp:117 apt=116\r\na=rtpmap:118 ulpfec/90000\r\na=ssrc-group:FID 209974158 655574395\r\na=ssrc:209974158 cname:cbcDfoB9A+yaLnW4\r\na=ssrc:209974158 msid:37f92d16-6899-447a-8139-d5881b3b4659 94089d76-049b-4629-8877-17816eaf99aa\r\na=ssrc:655574395 cname:cbcDfoB9A+yaLnW4\r\na=ssrc:655574395 msid:37f92d16-6899-447a-8139-d5881b3b4659 94089d76-049b-4629-8877-17816eaf99aa\r\n'}
+
+CANDIDATE:
+{'candidate': 'candidate:1946711577 1 udp 2122260223 192.168.80.1 57557 typ host generation 0 ufrag xqVp network-id 1', 'sdpMid': '0', 'sdpMLineIndex': 0, 'usernameFragment': 'xqVp'}
+
+CANDIDATE:
+{'candidate': 'candidate:180851841 1 tcp 1518280447 192.168.80.1 9 typ host tcptype active generation 0 ufrag xqVp network-id 1', 'sdpMid': '0', 'sdpMLineIndex': 0, 'usernameFragment': 'xqVp'}
+
+CANDIDATE:
+{'candidate': 'candidate:4189906386 1 tcp 1518214911 192.168.56.1 9 typ host tcptype active generation 0 ufrag xqVp network-id 2', 'sdpMid': '0', 'sdpMLineIndex': 0, 'usernameFragment': 'xqVp'}
+
+CANDIDATE:
+{'candidate': 'candidate:3737956094 1 tcp 1518018303 192.168.137.1 9 typ host tcptype active generation 0 ufrag xqVp network-id 3 network-cost 10', 'sdpMid': '0', 'sdpMLineIndex': 0, 'usernameFragment': 'xqVp'}
+
+CANDIDATE:
+{'candidate': 'candidate:3546892377 1 tcp 1517952767 192.168.1.41 9 typ host tcptype active generation 0 ufrag xqVp network-id 4 network-cost 10', 'sdpMid': '0', 'sdpMLineIndex': 0, 'usernameFragment': 'xqVp'}
+
+CANDIDATE:
+{'candidate': 'candidate:4024385314 1 tcp 1518154495 fd80::1904:7930:1303:67e6 9 typ host tcptype active generation 0 ufrag xqVp network-id 5 network-cost 10', 'sdpMid': '0', 'sdpMLineIndex': 0, 'usernameFragment': 'xqVp'}
+
+CANDIDATE:
+{'candidate': 'candidate:342164014 1 tcp 1518088959 fd80::b558:cfe0:3a7a:ee6c 9 typ host tcptype active generation 0 ufrag xqVp network-id 6 network-cost 10', 'sdpMid': '0', 'sdpMLineIndex': 0, 'usernameFragment': 'xqVp'}
+
+CANDIDATE:
+{'candidate': 'candidate:3737956094 1 tcp 1518018303 192.168.137.1 9 typ host tcptype active generation 0 ufrag xqVp network-id 3 network-cost 10', 'sdpMid': '1', 'sdpMLineIndex': 1, 'usernameFragment': 'xqVp'}
+
+CANDIDATE:
+{'candidate': 'candidate:3546892377 1 tcp 1517952767 192.168.1.41 9 typ host tcptype active generation 0 ufrag xqVp network-id 4 network-cost 10', 'sdpMid': '1', 'sdpMLineIndex': 1, 'usernameFragment': 'xqVp'}
+
+CANDIDATE:
+{'candidate': 'candidate:4024385314 1 tcp 1518154495 fd80::1904:7930:1303:67e6 9 typ host tcptype active generation 0 ufrag xqVp network-id 5 network-cost 10', 'sdpMid': '1', 'sdpMLineIndex': 1, 'usernameFragment': 'xqVp'}
+
+CANDIDATE:
+{'candidate': 'candidate:342164014 1 tcp 1518088959 fd80::b558:cfe0:3a7a:ee6c 9 typ host tcptype active generation 0 ufrag xqVp network-id 6 network-cost 10', 'sdpMid': '1', 'sdpMLineIndex': 1, 'usernameFragment': 'xqVp'}
+
+CANDIDATE:
+{'candidate': 'candidate:2272462666 1 udp 2122194687 192.168.56.1 57558 typ host generation 0 ufrag xqVp network-id 2', 'sdpMid': '0', 'sdpMLineIndex': 0, 'usernameFragment': 'xqVp'}
+
+CANDIDATE:
+{'candidate': 'candidate:2684570726 1 udp 2121998079 192.168.137.1 57559 typ host generation 0 ufrag xqVp network-id 3 network-cost 10', 'sdpMid': '0', 'sdpMLineIndex': 0, 'usernameFragment': 'xqVp'}
+
+CANDIDATE:
+{'candidate': 'candidate:2913381057 1 udp 2121932543 192.168.1.41 57560 typ host generation 0 ufrag xqVp network-id 4 network-cost 10', 'sdpMid': '0', 'sdpMLineIndex': 0, 'usernameFragment': 'xqVp'}
+
+CANDIDATE:
+{'candidate': 'candidate:3982284904 1 udp 1685724927 41.104.10.173 57566 typ srflx raddr 192.168.1.41 rport 57566 generation 0 ufrag xqVp network-id 4 network-cost 10', 'sdpMid': '1', 'sdpMLineIndex': 1, 'usernameFragment': 'xqVp'}
+
+CANDIDATE:
+{'candidate': 'candidate:3982284904 1 udp 1685724927 41.104.10.173 57560 typ srflx raddr 192.168.1.41 rport 57560 generation 0 ufrag xqVp network-id 4 network-cost 10', 'sdpMid': '0', 'sdpMLineIndex': 0, 'usernameFragment': 'xqVp'}
+
+CANDIDATE:
+{'candidate': 'candidate:180851841 1 tcp 1518280447 192.168.80.1 9 typ host tcptype active generation 0 ufrag xqVp network-id 1', 'sdpMid': '1', 'sdpMLineIndex': 1, 'usernameFragment': 'xqVp'}
+
+CANDIDATE:
+{'candidate': 'candidate:4189906386 1 tcp 1518214911 192.168.56.1 9 typ host tcptype active generation 0 ufrag xqVp network-id 2', 'sdpMid': '1', 'sdpMLineIndex': 1, 'usernameFragment': 'xqVp'}
+
+CANDIDATE:
+{'candidate': 'candidate:2343437255 1 udp 2122265343 fd80::9e62:6ed2:c00b:3dc1 50680 typ host generation 0 ufrag XbuQ network-id 2 network-cost 10', 'sdpMid': '1', 'sdpMLineIndex': 1, 'usernameFragment': 'XbuQ'}
+
+CANDIDATE:
+{'candidate': 'candidate:3180457941 1 udp 2122199807 fd80::5490:75be:31df:90c4 50681 typ host generation 0 ufrag XbuQ network-id 3 network-cost 10', 'sdpMid': '1', 'sdpMLineIndex': 1, 'usernameFragment': 'XbuQ'}
+
+OFFER:
+{'type': 'offer', 'sdp': 'v=0\r\no=- 3805131364538369052 2 IN IP4 127.0.0.1\r\ns=-\r\nt=0 0\r\na=group:BUNDLE 0 1\r\na=extmap-allow-mixed\r\na=msid-semantic: WMS 0ed3a9be-389c-4ee7-9636-406de175d165\r\nm=audio 9 UDP/TLS/RTP/SAVPF 111 63 9 0 8 13 110 126\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:XbuQ\r\na=ice-pwd:shGjC63CTJe/HXjM4aWcQx9b\r\na=ice-options:trickle\r\na=fingerprint:sha-256 4C:5B:45:8B:7C:E8:78:D1:28:4C:E0:AC:2E:51:F9:8F:8F:CC:16:12:1C:3E:49:12:01:04:7C:34:74:5E:E6:C4\r\na=setup:actpass\r\na=mid:0\r\na=extmap:1 urn:ietf:params:rtp-hdrext:ssrc-audio-level\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=sendrecv\r\na=msid:0ed3a9be-389c-4ee7-9636-406de175d165 2629a2e4-8e7c-4451-97da-5a3a50b132da\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:111 opus/48000/2\r\na=rtcp-fb:111 transport-cc\r\na=fmtp:111 minptime=10;useinbandfec=1\r\na=rtpmap:63 red/48000/2\r\na=fmtp:63 111/111\r\na=rtpmap:9 G722/8000\r\na=rtpmap:0 PCMU/8000\r\na=rtpmap:8 PCMA/8000\r\na=rtpmap:13 CN/8000\r\na=rtpmap:110 telephone-event/48000\r\na=rtpmap:126 telephone-event/8000\r\na=ssrc:3372894943 cname:ZCLVj4jhhkHErGIp\r\na=ssrc:3372894943 msid:0ed3a9be-389c-4ee7-9636-406de175d165 2629a2e4-8e7c-4451-97da-5a3a50b132da\r\nm=video 9 UDP/TLS/RTP/SAVPF 96 97 102 103 104 105 106 107 108 109 127 125 39 40 45 46 98 99 100 101 112 113 116 117 118\r\nc=IN IP4 0.0.0.0\r\na=rtcp:9 IN IP4 0.0.0.0\r\na=ice-ufrag:XbuQ\r\na=ice-pwd:shGjC63CTJe/HXjM4aWcQx9b\r\na=ice-options:trickle\r\na=fingerprint:sha-256 4C:5B:45:8B:7C:E8:78:D1:28:4C:E0:AC:2E:51:F9:8F:8F:CC:16:12:1C:3E:49:12:01:04:7C:34:74:5E:E6:C4\r\na=setup:actpass\r\na=mid:1\r\na=extmap:14 urn:ietf:params:rtp-hdrext:toffset\r\na=extmap:2 http://www.webrtc.org/experiments/rtp-hdrext/abs-send-time\r\na=extmap:13 urn:3gpp:video-orientation\r\na=extmap:3 http://www.ietf.org/id/draft-holmer-rmcat-transport-wide-cc-extensions-01\r\na=extmap:5 http://www.webrtc.org/experiments/rtp-hdrext/playout-delay\r\na=extmap:6 http://www.webrtc.org/experiments/rtp-hdrext/video-content-type\r\na=extmap:7 http://www.webrtc.org/experiments/rtp-hdrext/video-timing\r\na=extmap:8 http://www.webrtc.org/experiments/rtp-hdrext/color-space\r\na=extmap:4 urn:ietf:params:rtp-hdrext:sdes:mid\r\na=extmap:10 urn:ietf:params:rtp-hdrext:sdes:rtp-stream-id\r\na=extmap:11 urn:ietf:params:rtp-hdrext:sdes:repaired-rtp-stream-id\r\na=sendrecv\r\na=msid:0ed3a9be-389c-4ee7-9636-406de175d165 956b84db-a4aa-4233-8ea6-f5fd4a9b7f70\r\na=rtcp-mux\r\na=rtcp-rsize\r\na=rtpmap:96 VP8/90000\r\na=rtcp-fb:96 goog-remb\r\na=rtcp-fb:96 transport-cc\r\na=rtcp-fb:96 ccm fir\r\na=rtcp-fb:96 nack\r\na=rtcp-fb:96 nack pli\r\na=rtpmap:97 rtx/90000\r\na=fmtp:97 apt=96\r\na=rtpmap:102 H264/90000\r\na=rtcp-fb:102 goog-remb\r\na=rtcp-fb:102 transport-cc\r\na=rtcp-fb:102 ccm fir\r\na=rtcp-fb:102 nack\r\na=rtcp-fb:102 nack pli\r\na=fmtp:102 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42001f\r\na=rtpmap:103 rtx/90000\r\na=fmtp:103 apt=102\r\na=rtpmap:104 H264/90000\r\na=rtcp-fb:104 goog-remb\r\na=rtcp-fb:104 transport-cc\r\na=rtcp-fb:104 ccm fir\r\na=rtcp-fb:104 nack\r\na=rtcp-fb:104 nack pli\r\na=fmtp:104 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42001f\r\na=rtpmap:105 rtx/90000\r\na=fmtp:105 apt=104\r\na=rtpmap:106 H264/90000\r\na=rtcp-fb:106 goog-remb\r\na=rtcp-fb:106 transport-cc\r\na=rtcp-fb:106 ccm fir\r\na=rtcp-fb:106 nack\r\na=rtcp-fb:106 nack pli\r\na=fmtp:106 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=42e01f\r\na=rtpmap:107 rtx/90000\r\na=fmtp:107 apt=106\r\na=rtpmap:108 H264/90000\r\na=rtcp-fb:108 goog-remb\r\na=rtcp-fb:108 transport-cc\r\na=rtcp-fb:108 ccm fir\r\na=rtcp-fb:108 nack\r\na=rtcp-fb:108 nack pli\r\na=fmtp:108 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=42e01f\r\na=rtpmap:109 rtx/90000\r\na=fmtp:109 apt=108\r\na=rtpmap:127 H264/90000\r\na=rtcp-fb:127 goog-remb\r\na=rtcp-fb:127 transport-cc\r\na=rtcp-fb:127 ccm fir\r\na=rtcp-fb:127 nack\r\na=rtcp-fb:127 nack pli\r\na=fmtp:127 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=4d001f\r\na=rtpmap:125 rtx/90000\r\na=fmtp:125 apt=127\r\na=rtpmap:39 H264/90000\r\na=rtcp-fb:39 goog-remb\r\na=rtcp-fb:39 transport-cc\r\na=rtcp-fb:39 ccm fir\r\na=rtcp-fb:39 nack\r\na=rtcp-fb:39 nack pli\r\na=fmtp:39 level-asymmetry-allowed=1;packetization-mode=0;profile-level-id=4d001f\r\na=rtpmap:40 rtx/90000\r\na=fmtp:40 apt=39\r\na=rtpmap:45 AV1/90000\r\na=rtcp-fb:45 goog-remb\r\na=rtcp-fb:45 transport-cc\r\na=rtcp-fb:45 ccm fir\r\na=rtcp-fb:45 nack\r\na=rtcp-fb:45 nack pli\r\na=fmtp:45 level-idx=5;profile=0;tier=0\r\na=rtpmap:46 rtx/90000\r\na=fmtp:46 apt=45\r\na=rtpmap:98 VP9/90000\r\na=rtcp-fb:98 goog-remb\r\na=rtcp-fb:98 transport-cc\r\na=rtcp-fb:98 ccm fir\r\na=rtcp-fb:98 nack\r\na=rtcp-fb:98 nack pli\r\na=fmtp:98 profile-id=0\r\na=rtpmap:99 rtx/90000\r\na=fmtp:99 apt=98\r\na=rtpmap:100 VP9/90000\r\na=rtcp-fb:100 goog-remb\r\na=rtcp-fb:100 transport-cc\r\na=rtcp-fb:100 ccm fir\r\na=rtcp-fb:100 nack\r\na=rtcp-fb:100 nack pli\r\na=fmtp:100 profile-id=2\r\na=rtpmap:101 rtx/90000\r\na=fmtp:101 apt=100\r\na=rtpmap:112 H264/90000\r\na=rtcp-fb:112 goog-remb\r\na=rtcp-fb:112 transport-cc\r\na=rtcp-fb:112 ccm fir\r\na=rtcp-fb:112 nack\r\na=rtcp-fb:112 nack pli\r\na=fmtp:112 level-asymmetry-allowed=1;packetization-mode=1;profile-level-id=64001f\r\na=rtpmap:113 rtx/90000\r\na=fmtp:113 apt=112\r\na=rtpmap:116 red/90000\r\na=rtpmap:117 rtx/90000\r\na=fmtp:117 apt=116\r\na=rtpmap:118 ulpfec/90000\r\na=ssrc-group:FID 1126869356 3405395426\r\na=ssrc:1126869356 cname:ZCLVj4jhhkHErGIp\r\na=ssrc:1126869356 msid:0ed3a9be-389c-4ee7-9636-406de175d165 956b84db-a4aa-4233-8ea6-f5fd4a9b7f70\r\na=ssrc:3405395426 cname:ZCLVj4jhhkHErGIp\r\na=ssrc:3405395426 msid:0ed3a9be-389c-4ee7-9636-406de175d165 956b84db-a4aa-4233-8ea6-f5fd4a9b7f70\r\n'}
+
+CANDIDATE:
+{'candidate': 'candidate:126428765 1 udp 2122129151 192.168.1.42 56561 typ host generation 0 ufrag XbuQ network-id 1 network-cost 10', 'sdpMid': '0', 'sdpMLineIndex': 0, 'usernameFragment': 'XbuQ'}
+
+CANDIDATE:
+{'candidate': 'candidate:2343437255 1 udp 2122265343 fd80::9e62:6ed2:c00b:3dc1 50677 typ host generation 0 ufrag XbuQ network-id 2 network-cost 10', 'sdpMid': '0', 'sdpMLineIndex': 0, 'usernameFragment': 'XbuQ'}
+
+CANDIDATE:
+{'candidate': 'candidate:3180457941 1 udp 2122199807 fd80::5490:75be:31df:90c4 50678 typ host generation 0 ufrag XbuQ network-id 3 network-cost 10', 'sdpMid': '0', 'sdpMLineIndex': 0, 'usernameFragment': 'XbuQ'}
+
+CANDIDATE:
+{'candidate': 'candidate:126428765 1 udp 2122129151 192.168.1.42 50679 typ host generation 0 ufrag XbuQ network-id 1 network-cost 10', 'sdpMid': '1', 'sdpMLineIndex': 1, 'usernameFragment': 'XbuQ'}
+
+CANDIDATE:
+{'candidate': 'candidate:2831402851 1 udp 1685921535 41.104.10.173 50679 typ srflx raddr 192.168.1.42 rport 50679 generation 0 ufrag XbuQ network-id 1 network-cost 10', 'sdpMid': '1', 'sdpMLineIndex': 1, 'usernameFragment': 'XbuQ'}
+
+CANDIDATE:
+{'candidate': 'candidate:4179882697 1 tcp 1518149375 192.168.1.42 9 typ host tcptype active generation 0 ufrag XbuQ network-id 1 network-cost 10', 'sdpMid': '0', 'sdpMLineIndex': 0, 'usernameFragment': 'XbuQ'}
+
+CANDIDATE:
+{'candidate': 'candidate:1963251539 1 tcp 1518285567 fd80::9e62:6ed2:c00b:3dc1 9 typ host tcptype active generation 0 ufrag XbuQ network-id 2 network-cost 10', 'sdpMid': '0', 'sdpMLineIndex': 0, 'usernameFragment': 'XbuQ'}
+
+CANDIDATE:
+{'candidate': 'candidate:1127955265 1 tcp 1518220031 fd80::5490:75be:31df:90c4 9 typ host tcptype active generation 0 ufrag XbuQ network-id 3 network-cost 10', 'sdpMid': '1', 'sdpMLineIndex': 1, 'usernameFragment': 'XbuQ'}
+
+CANDIDATE:
+{'candidate': 'candidate:2831402851 1 udp 1685921535 41.104.10.173 56561 typ srflx raddr 192.168.1.42 rport 56561 generation 0 ufrag XbuQ network-id 1 network-cost 10', 'sdpMid': '0', 'sdpMLineIndex': 0, 'usernameFragment': 'XbuQ'}
+
+CANDIDATE:
+{'candidate': 'candidate:1127955265 1 tcp 1518220031 fd80::5490:75be:31df:90c4 9 typ host tcptype active generation 0 ufrag XbuQ network-id 3 network-cost 10', 'sdpMid': '0', 'sdpMLineIndex': 0, 'usernameFragment': 'XbuQ'}
+
+CANDIDATE:
+{'candidate': 'candidate:4179882697 1 tcp 1518149375 192.168.1.42 9 typ host tcptype active generation 0 ufrag XbuQ network-id 1 network-cost 10', 'sdpMid': '1', 'sdpMLineIndex': 1, 'usernameFragment': 'XbuQ'}
+
+CANDIDATE:
+{'candidate': 'candidate:1963251539 1 tcp 1518285567 fd80::9e62:6ed2:c00b:3dc1 9 typ host tcptype active generation 0 ufrag XbuQ network-id 2 network-cost 10', 'sdpMid': '1', 'sdpMLineIndex': 1, 'usernameFragment': 'XbuQ'}
+
